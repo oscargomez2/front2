@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room</title>
+    <link rel="stylesheet" href="Nueva carpeta/Semantic-UI-CSS-master/semantic.min.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/semantic.min.js"></script>
+    <style type="text/css">
+        .full {
+            min-height: 80%;
+            background-image: url('img/dos.jpg');
+            background-size: cover;
+        }
+
+        .pheader.h1.ui.header {
+            margin-top: 20cm;
+            margin-bottom: 0em;
+            font-size: 4em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ui purple inverted fixed menu">
+        <a class="item" href="index.html">
+            <i class="home icon"></i>
+            Inicio
+        </a>
+        <a class="item" href="category.html">
+            Categorias
+        </a>
+        <a class="item" href="room.html">
+            Habitaciones
+        </a>
+        <a class="item" href="client.html">
+            Clientes
+        </a>
+        <a class="item" href="message.html">
+            Mensajes
+        </a>
+        <a class="item" href="reservation.html">
+            Reservaciones
+        </a>
+    </div>
+
+    <div class="full">
+        <!--<h1 class="algo">Bienvenidos</h1>
+        <div class="ui stackable grid container centered">
+            <div class="ui text container">
+                <h1 class="ui header">Bienvenidos</h1>
+
+            </div>
+        </div>-->
+        <br><br><br><br>
+        <h1 class="ui header">
+            <span class="library">Hola</span>
+        </h1>
+    </div>
+
+    <div class="ui divider"></div>
+
+    <div class="ui two column left aligned divided very relaxed stackable grid container">
+        <div class="row">
+            <div class="column">
+                <h2>Registro de Habitaciones</h2>
+                <div class="ui form">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" placeholder="name">
+                    </div>
+                    <div class="field">
+                        <label for="stars">Stars</label>
+                        <input type="number" name="stars" placeholder="stars">
+                    </div>
+                    <div class="field">
+                        <label for="category">Category</label>
+                        <select class="ui dropdown">
+                            <option value="">Select a category</option>
+                            <option value="1">Alabama</option>
+                            <option value="2">Alaska</option>
+                            <option value="3">Arizona</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="description">Description</label>
+                        <input type="text" name="description" placeholder="description">
+                    </div>
+                    <div class="field">
+                        <label for="hotel">Hotel</label>
+                        <input type="text" name="hotel" placeholder="hotel">
+                    </div>
+
+                </div>
+            </div>
+            <div class="column">
+                <h2>Informe de Habitaciones</h2>
+                <table class="ui celled table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Job</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Name">James</td>
+                            <td data-label="Age">24</td>
+                            <td data-label="Job">Engineer</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name">Jill</td>
+                            <td data-label="Age">26</td>
+                            <td data-label="Job">Engineer</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Name">Elyse</td>
+                            <td data-label="Age">24</td>
+                            <td data-label="Job">Designer</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="ui grid container">
+        <div class="row">
+
+        </div>
+    </div>
+    <script>
+        $('select.dropdown')
+            .dropdown()
+            ;
+    </script>
+</body>
+
+</html>
