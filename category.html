@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/categories.js"></script>
     <title>Category</title>
     <link rel="stylesheet" href="Nueva carpeta/Semantic-UI-CSS-master/semantic.min.css">
     <style type="text/css">
@@ -68,43 +70,20 @@
                     <div class="field">
                         <div class="ui search">
                             <label for="name">Name</label>
-                            <input type="text" name="name" placeholder="name">
+                            <input type="text" id="Cname" placeholder="name">
                         </div>
                     </div>
                     <div class="field">
                         <label for="description">Description</label>
-                        <textarea rows="2" name="description" placeholder="description"></textarea>
+                        <input type="text" id="Cdescription" placeholder="description">
                     </div> 
+                    <button onclick="traerInformacionCategorias()" class="ui purple button" > Search Categories</button>
+                    <button onclick="guardarInformacionCategorias()" class="ui blue button" >Save Categories </button>
                 </div>
             </div>
             <div class="column">
                 <h2>Informe de Categorias</h2>
-                <table class="ui celled table">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Age</th>
-                            <th>Job</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-label="Name">James</td>
-                            <td data-label="Age">24</td>
-                            <td data-label="Job">Engineer</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Name">Jill</td>
-                            <td data-label="Age">26</td>
-                            <td data-label="Job">Engineer</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Name">Elyse</td>
-                            <td data-label="Age">24</td>
-                            <td data-label="Job">Designer</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div id="resultado1"></div>
             </div>
         </div>
         <div class="row">

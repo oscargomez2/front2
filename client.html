@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/clients.js"></script>
     <title>Client</title>
     <link rel="stylesheet" href="Nueva carpeta/Semantic-UI-CSS-master/semantic.min.css" />
     <link rel="stylesheet" href="Nueva carpeta/Semantic-UI-CSS-master/semantic.min.css">
@@ -69,54 +71,32 @@
                     <!--<div class="eight wide field">-->
                     <div class="ui field">
                         <label for="email">Email</label>
-                        <input type="email" name="email" placeholder="email">
+                        <input type="email" id="Clemail" placeholder="email">
                     </div>
                     <div class="ui field">
                         <label for="password">Password</label>
-                        <input type="password" name="password" placeholder="password">
+                        <input type="password" id="Clpassword" placeholder="password">
                     </div>
                     <div class="ui field">
                         <label for="name">Name</label>
-                        <input type="text" name="name" placeholder="name">
+                        <input type="text" id="Clname" placeholder="name">
                     </div>
                     <div class="ui field">
                         <label for="age">Age</label>
-                        <input type="number" name="age" placeholder="age">
+                        <input type="number" id="Clage" placeholder="age">
                     </div>
-
+                    <button onclick="traerInformacionClientes()" class="ui purple button" > Search Clients</button>
+                    <button onclick="guardarInformacionClientes()" class="ui blue button" >Save Clients </button>
+                    
                     <!--</div>-->
 
                 </div>
             </div>
             <div class="column">
                 <h2>Informe de Clientes</h2>
-                <table class="ui celled table">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Age</th>
-                            <th>Job</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-label="Name">James</td>
-                            <td data-label="Age">24</td>
-                            <td data-label="Job">Engineer</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Name">Jill</td>
-                            <td data-label="Age">26</td>
-                            <td data-label="Job">Engineer</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Name">Elyse</td>
-                            <td data-label="Age">24</td>
-                            <td data-label="Job">Designer</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div id="resultado2"></div>
             </div>
+            
         </div>
         <div class="row">
 
