@@ -31,7 +31,7 @@ function pintarRespuesta(respuesta){
 function guardarInformacionClientes(){
     let var2 = {
         email:$("#Clemail").val(),
-        description:$("#Clpassword").val(),
+        password:$("#Clpassword").val(),
         name:$("#Clname").val(),
         age:$("#Clage").val(),
         };
